@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Portfolio | Aaron Fagerstrom</title>
+<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+<script src="https://use.fontawesome.com/99b7d76020.js"></script>
+<style>
+
+html, body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,p,ul,li {font-family:'Open Sans', 'Helvetica Neue';}
+body {
+  height: 100%;
+}
+
+
+.Aligner {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#132963+0,542d48+100&0.6+0,0.6+100 */
+background: -moz-linear-gradient(-45deg,  rgba(19,41,99,0.6) 0%, rgba(84,45,72,0.6) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(19,41,99,0.6) 0%,rgba(84,45,72,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(19,41,99,0.6) 0%,rgba(84,45,72,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99132963', endColorstr='#99542d48',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.content {
+  flex: 1;
+  max-width:1200px;
+  color:#ededed;
+}
+
+.content--top {
+  align-self: flex-start;
+}
+.content-bottom {
+  align-self: flex-end;
+}
+
+.content--fixed {
+  flex: none;
+  max-width: 50%;
+}
+
+.arrow-down {
+	position:absolute; bottom:0px;display:block;
+	background:url('http://nmhchomes.com/nmhc/wp-content/themes/nmhcresponsive/images/downarrow.svg') no-repeat;
+	background-size:contain;
+	animation:downarrow 1s alternate infinite;
+    animation-timing-function: ease-in-out;
+    width:150px;height:50px;
+    margin:0 auto;
+}
+
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+@keyframes downarrow {
+  0%   { margin-bottom: 25px; }
+  100%   { margin-bottom: 15px; }
+}
+
+.header {max-width:2200px;}
+h1, .content h1 {font-family:'Open Sans','Helvetica Neue';font-weight:300;margin:0;}
+.content p {font-family:'Open Sans','Helvetica Neue';font-weight:300;vertical-align: bottom;}
+
+.home-left {padding:9.5px;min-height:4em;text-align:right;border-right:1px solid #999;}
+.home-right {padding:10px;}
+.social {list-style:none;float:right;margin:0;padding:0;display:block;}
+.social li {float:left;padding:0px;}
+.social li a {color:#ededed;padding:6px;margin:0;font-size:1.3em;transition:all .25s;display:block;}
+
+.social li a:hover {color:#badbfc;-webkit-transform:rotateZ(10deg);transition:all .25s;}
+.pure-menu {text-align:center;}
+.pure-menu-heading {color:#FFF;font-size:1.4em;}
+.pure-menu-link {color:#ededed;font-weight:300;}
+.pure-menu-link:hover {background:none;}
+
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+
+#belowthefold {
+	background:#EDEDED;
+padding:2%;
+}
+
+#belowthefold p {padding:20px;}
+
+@media all and (max-width:768px) {
+
+	.home-left {padding:10px;text-align:center;border:none;}
+	.social {float:none;margin:0 auto;width:148px;}
+	.social li {width:35px;}
+	.home-right {text-align:center;padding:0px 5px;width:300px;margin:0 auto;}
+}
+
+</style>
+<script>
+  $(".arrow-down").click(function() {
+  window.location = $(this).find("a").attr("href");
+  return false;
+});
+	</script>
+
+</head>
+
+<body>
+
+<video playsinline autoplay muted loop poster="" id="bgvid">
+    <source src="loop.mp4" type="video/mp4">
+</video>
+
+<div class="Aligner">
+<!-- <div class="arrow-down"><a href="#about" class="fill-div"></a></div> -->
+  <div class="content">
+  <div class="pure-g" style="padding:3vw 0vw;">
+  		<div class="pure-u-1 pure-u-md-1-2"><div class="home-left"><h1>Aaron Fagerstrom</h1>
+  		<ul class="social">
+  			<li><a href="http://facebook.com/a.a.fagerstrom" target="_blank"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="http://twitter.com/AaronFagerstrom" target="_blank"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="mailto:a.a.fagerstrom@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+			<li><a href="http://youtube.com/aaronfagerstrom" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+		</ul>
+  		</div></div>
+  		<div class="pure-u-1 pure-u-md-1-2"><div class="home-right"><p>I'm a Piano Performance and Music Technology Student at Rowan University.</p></div>
+  	</div>
+<div class="pure-u-1" style="height:60px;padding:5vw;text-align:center;"><h1>Here's some of my recent video work!</h1></div>
+
+<div class="pure-u-1 pure-u-md-1-2">
+	<div class="pure-menu custom-restricted-width">
+          <span class="pure-menu-heading">Classical promos</span>
+
+      <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FViennaSummerMusicFestival%2Fvideos%2F453508818394754%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+      </div>
+</div>
+
+<div class="pure-u-1 pure-u-md-1-2">
+	<div class="pure-menu custom-restricted-width">
+          <span class="pure-menu-heading">Modern promos</span>
+          <iframe src="https://player.vimeo.com/video/276035537" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+</div>
+
+<div class="pure-u-1 pure-u-md-1-2">
+	<div class="pure-menu custom-restricted-width">
+          <span class="pure-menu-heading">On-location classical recordings</span>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/jhBhI2GNVhE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+</div>
+
+<div class="pure-u-1 pure-u-md-1-2">
+	<div class="pure-menu custom-restricted-width">
+          <span class="pure-menu-heading">Profiles</span>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/DuEp2a4qlj8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+</div>
+
+
+  </div>
+  </div>
+
+
+</div>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=9068221;
+var sc_invisible=1;
+var sc_security="c276717f";
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="website
+statistics" href="http://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="//c.statcounter.com/9068221/0/c276717f/1/" alt="website
+statistics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+</body>
+
+</html>
